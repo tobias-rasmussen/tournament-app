@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ThemePalette} from '@angular/material/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tournament-app';
+  links = ['Oversigt', 'Spilleplan', 'Næste kamp'];
+  activeLink = this.links[0];
+  background: ThemePalette = undefined;
 }
